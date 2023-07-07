@@ -1,0 +1,11 @@
+In React, "Fragment" and "Div" are used interchangeably. 
+  The main difference between the two is that "Fragment" clears out all extra divs from a DOM tree
+  while "Div" adds a div to the DOM tree.
+
+With React Fragments, we can create code that is cleaner and easier to read. 
+    It renders components more quickly and uses less memory. Every element is rendered as intended. 
+    While Div expands the DOM due to the long nested nodes that occur when there are too many HTML tags on your website.
+
+The div element has more methods and properties, which causes it to consume more memory which can make the page slow load time; 
+the prototype chain is like HTMLDivElement -> HTMLElement -> Element -> Node -> EventTarget, whereas the React fragment 
+  has fewer methods with the prototype chain DocumentFragment -> Node -> EventTarget.
